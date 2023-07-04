@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        The To Be Read List
+    </title>
+
+    <style>
+        body {
+            background-color: #ECDFD1;
+        }
+
+        #searchbar {
+            margin-left: 15%;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        input[type=text] {
+            width: 30%;
+            -webkit-transition: width 0.15s ease-in-out;
+            transition: width 0.15s ease-in-out;
+        }
+
+        /* When the input field gets focus,
+        change its width to 100% */
+        input[type=text]:focus {
+            width: 70%;
+        }
+
+        #list {
+            font-size: 1.5em;
+            margin-left: 90px;
+        }
+
+        .articles {
+            display: list-item;
+        }
+
+        .navBar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #7c5340;
+        }
+
+        .navBar li {
+            float: left;
+        }
+
+        .navBar li a {
+            display: block;
+            color: #E0AB80;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navBar li a:hover {
+            background-color: #AE8165;
+        }
+
+        .articleLinks {
+            text-decoration: none;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navBar">
+        <ul>
+            <li><a class="active" href="indextbrlist.html">Home</a></li>
+            <li><a href="bookstomovies.html">Books To Movies</a></li>
+            <li><a href="newreleases.html">New Releases</a></li>
+            <li><a href="fantasy.html">Fantasy</a></li>
+            <li><a href="dystopianscifi.html">Dystopian/Sci-Fi</a></li>
+            <li><a href="romance.html">Romance</a></li>
+            <li><a href="booklists.html">Book Lists</a></li>
+            <li><a href="weeklystaffpicks.html">Weekly Staff Picks</a></li>
+            <li><a href="seasonalfavorites.html">Seasonal Favorites</a></li>
+        </ul>
+        <br>
+
+        <!-- input tag -->
+        <input id="searchbar" onkeyup="search_article()" type="text" name="search" placeholder="Search articles...">
+
+        <!-- ordered list -->
+        <ol id='list' class="articleLinks">
+            <li class="articles"><a href="example.html">Marie Lu Book List</a></li>
+            <li class="articles"><a href="harrypotter1bookstomovies.html">Books to Movies - Harry Potter</a></li>
+            <li class="articles"><a href="example.html">The Summer I Turned Pretty</a></li>
+            <li class="articles"><a href="example.html">Example Article</a></li>
+        </ol>
+
+
+        <!-- linking javascript -->
+        <script>
+
+            // JavaScript code
+            function search_article() {
+                let input = document.getElementById('searchbar').value
+                input = input.toLowerCase();
+                let x = document.getElementsByClassName('articles');
+
+                for (i = 0; i < x.length; i++) {
+                    if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                        x[i].style.display = "none";
+                    }
+                    else {
+                        x[i].style.display = "list-item";
+                    }
+                }
+            }
+        </script>
+<br>
+<br>
+<br>
+<br>
+
+        <div class="navBar">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="TestSearchBar.html">Search</a></li>
+
+            </ul>
+
+        </div>
+
+</body>
+
+</html>
