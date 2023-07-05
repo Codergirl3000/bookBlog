@@ -3,10 +3,11 @@
 
 <head>
     <title>The To Be Read List</title>
+    <link rel="icon" href="NoBackgroundLogoTBRList.png" type="image/icon type">
     <style>
         body {
             background-color: #ECDFD1;
-            font-family:monospace;
+            font-family: monospace;
         }
 
         h1 {
@@ -25,7 +26,7 @@
             float: left;
         }
 
-        .navBar li a {
+        .active {
             display: block;
             color: #E0AB80;
             text-align: center;
@@ -37,11 +38,11 @@
             background-color: #AE8165;
         }
 
-        .exampleArticle {
+        .newReleases {
             border: 1px solid black;
             margin: 1rem;
-            padding: 2rem;
-            text-align: left;
+            padding: 2rem 2rem;
+            text-align: center;
         }
 
         .articles {
@@ -54,6 +55,33 @@
             color: black;
             text-decoration: none;
         }
+
+        .logo {
+            display: block;
+            color: #E0AB80;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .profilePics {
+            display: inline-block;
+            padding: 1rem 1rem;
+            vertical-align: middle;
+        }
+
+        .theTeam {
+            border: 1px solid black;
+            margin: 1rem;
+            padding: 2rem 2rem;
+            text-align: center;
+        }
+
+        .exampleArticle {
+            border: 1px solid black;
+            margin: 1rem;
+            padding: 2rem;
+            text-align: left;
+        }
     </style>
 </head>
 
@@ -61,17 +89,18 @@
 
     <div class="navBar">
         <ul>
+            <li><a href="/bookBlog" class="logo"><img src="NoBackgroundLogoTBRList.png" width="40"></a></li>
             <li><a class="active" href="/bookBlog">Home</a></li>
-            <li><a href="bookstomovies.html">Books To Movies</a></li>
-            <li><a href="newreleases.html">New Releases</a></li>
-            <li><a href="fantasy.html">Fantasy</a></li>
-            <li><a href="dystopianscifi.html">Dystopian/Sci-Fi</a></li>
-            <li><a href="romance.html">Romance</a></li>
-            <li><a href="booklists.html">Book Lists</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="TestSearchBar.html">Search</a></li>
-            <li><a href="weeklystaffpics.html">Weekly Staff Pics</a></li>
-            <li><a href="seasonalfavorites.html">Seasonal Favorites</a></li>
+            <li><a class="active" href="bookstomovies.html">Books To Movies</a></li>
+            <li><a class="active" href="newreleases.html">New Releases</a></li>
+            <li><a class="active" href="fantasy.html">Fantasy</a></li>
+            <li><a class="active" href="dystopianscifi.html">Dystopian/Sci-Fi</a></li>
+            <li><a class="active" href="romance.html">Romance</a></li>
+            <li><a class="active" href="booklists.html">Book Lists</a></li>
+            <li><a class="active" href="weeklystaffpicks.html">Weekly Staff Picks</a></li>
+            <li><a class="active" href="seasonalfavorites.html">Seasonal Favorites</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="TestSearchBar.html" class="logo"><img src="searchlogo.png" width="40"></a></li>
         </ul>
 
     </div>
@@ -103,10 +132,12 @@
                 It was, the first book came out, then first movie came out, second and third book came out, second movie
                 came out and so on.
 
+
             </li>
             <li>
                 J. K. Rowling actually told Alan Rickman about what would happen to Snape (spoiler if you haven’t read
                 the book/seen the movie) and I think that it really influenced the way that he played the character.
+
 
             </li>
         </p>
@@ -119,6 +150,7 @@
             that’s where I think a lot of book-to-movie adaptations go wrong. They decide to switch up the entire
             storyline and it kind of takes away from the entire reason fans wanted a book to movie adaptation in the
             first place. If it’s not broke don’t fix it, right?
+
 
         </p>
         <h3>
@@ -150,15 +182,6 @@
             </li>
         </p>
     </div>
-    <div class="navBar">
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="TestSearchBar.html">Search</a></li>
-
-        </ul>
-
-    </div>
-
 </body>
 
 </html>
