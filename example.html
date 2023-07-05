@@ -3,6 +3,7 @@
 
 <head>
     <title>The To Be Read List</title>
+    <link rel="icon" href="NoBackgroundLogoTBRList.png" type="image/icon type">
     <style>
         body {
             background-color: #ECDFD1;
@@ -25,7 +26,7 @@
             float: left;
         }
 
-        .navBar li a {
+        .active {
             display: block;
             color: #E0AB80;
             text-align: center;
@@ -37,7 +38,7 @@
             background-color: #AE8165;
         }
 
-        .exampleArticle {
+        .newReleases {
             border: 1px solid black;
             margin: 1rem;
             padding: 2rem 2rem;
@@ -54,6 +55,12 @@
             color: black;
             text-decoration: none;
         }
+        .logo {
+            display: block;
+            color: #E0AB80;
+            text-align: center;
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -61,47 +68,47 @@
 
     <div class="navBar">
         <ul>
+            <li><a href="/bookBlog" class="logo"><img src="NoBackgroundLogoTBRList.png" width="40"></a></li>
             <li><a class="active" href="/bookBlog">Home</a></li>
-            <li><a href="bookstomovies.html">Books To Movies</a></li>
-            <li><a href="newreleases.html">New Releases</a></li>
-            <li><a href="fantasy.html">Fantasy</a></li>
-            <li><a href="dystopianscifi.html">Dystopian/Sci-Fi</a></li>
-            <li><a href="romance.html">Romance</a></li>
-            <li><a href="booklists.html">Book Lists</a></li>
-            <li><a href="weeklystaffpics.html">Weekly Staff Pics</a></li>
-            <li><a href="seasonalfavorites.html">Seasonal Favorites</a></li>
+            <li><a class="active" href="bookstomovies.html">Books To Movies</a></li>
+            <li><a class="active" href="newreleases.html">New Releases</a></li>
+            <li><a class="active" href="fantasy.html">Fantasy</a></li>
+            <li><a class="active" href="dystopianscifi.html">Dystopian/Sci-Fi</a></li>
+            <li><a class="active" href="romance.html">Romance</a></li>
+            <li><a class="active" href="booklists.html">Book Lists</a></li>
+            <li><a class="active" href="weeklystaffpicks.html">Weekly Staff Picks</a></li>
+            <li><a class="active" href="seasonalfavorites.html">Seasonal Favorites</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="TestSearchBar.html" class="logo"><img src="searchlogo.png" width="40"></a></li>
         </ul>
 
     </div>
     <div class="exampleArticle">
         <h1>
-            Example Article Title
+        Example Article Title
         </h1>
         <h2>
-            Author Name - Date
+        Author Name - Date
         </h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a nulla quis nisi semper commodo. Nullam pulvinar enim vitae iaculis malesuada. Ut quis purus et mauris sodales aliquam a sagittis nunc. Mauris condimentum sed quam eu placerat. Suspendisse fringilla purus dictum diam luctus, quis viverra augue elementum. Phasellus tempus metus eu diam posuere cursus. Vivamus metus diam, consectetur sit amet ultricies eget, ultricies in quam. Nullam rutrum, nunc nec tincidunt eleifend, velit dui maximus enim, tempor tempus orci massa non leo. Donec quis est nec risus pretium auctor a at augue. Morbi eget hendrerit nisi, sit amet pulvinar nibh.
-
-Duis laoreet pharetra sagittis. Aenean in commodo libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum rhoncus massa eu leo iaculis, quis feugiat enim interdum. In congue libero ut condimentum mattis. Cras ullamcorper eget eros ut dapibus. Vestibulum viverra dolor sapien, id rhoncus elit tincidunt eget. Sed maximus at tellus quis gravida. Etiam venenatis vehicula ligula in rhoncus. Mauris congue leo lectus, id pulvinar quam condimentum quis. Sed enim tortor, cursus id metus et, lobortis feugiat quam. Sed eget erat orci. Duis sed vehicula ex. Nam sit amet odio ac velit mattis viverra.
-
-Donec lobortis commodo ipsum ut malesuada. Aenean a fermentum enim, at mattis nibh. Fusce nec nibh eu orci porta iaculis. Ut sollicitudin vel lectus eu blandit. Phasellus tempus lorem a turpis varius molestie. Pellentesque nec purus venenatis nisl mattis sollicitudin eget quis ante. Curabitur cursus erat quis lacus consectetur commodo. Nulla accumsan porttitor interdum. Morbi vehicula pulvinar mi. Nullam et porttitor augue. Duis sed eros et nibh pellentesque aliquam ac eget turpis. Nulla ac ligula eu libero euismod consequat quis eget lectus. Ut dignissim nisi et fringilla fringilla. In hendrerit odio ut metus laoreet placerat. Aliquam efficitur felis in tellus malesuada, a laoreet libero rutrum. Phasellus at nunc lobortis, porttitor est laoreet, egestas mi.
-
-Praesent imperdiet posuere aliquam. Nunc sodales et velit nec venenatis. Donec nibh nisi, sodales eget imperdiet sed, scelerisque ac lorem. Etiam quis accumsan nunc. Praesent nec finibus urna. Sed euismod sem aliquam tempus feugiat. Nunc ullamcorper sed elit at tristique. Proin feugiat venenatis rutrum. Suspendisse potenti. Etiam non consectetur libero, ut sollicitudin nibh. Nam eu tortor ac dolor scelerisque tincidunt. Maecenas dapibus orci nec ante pharetra, accumsan lobortis eros accumsan.
-
-In sodales libero non eros tristique semper. Suspendisse fermentum, nisl tristique venenatis mattis, neque tellus tempor purus, sit amet imperdiet leo turpis at urna. Nullam et facilisis ligula. Sed pharetra imperdiet elit euismod interdum. Aliquam tempus, sem eu condimentum maximus, ipsum metus mattis est, euismod placerat velit orci consequat justo. Phasellus finibus, magna et consectetur hendrerit, tortor leo pretium risus, eget euismod lectus eros in lorem. Praesent leo lacus, finibus et ante sit amet, pulvinar varius risus. Morbi lobortis diam vulputate egestas imperdiet. Donec at est neque. Sed a eleifend mi, vitae sollicitudin dolor. Cras ac hendrerit tellus. Nulla sagittis mauris id sem sodales volutpat. Proin efficitur dolor lacus, vitae imperdiet massa maximus ac. Phasellus dignissim risus eu dui mattis varius.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a nulla quis nisi semper commodo. Nullam pulvinar enim vitae iaculis malesuada. Ut quis purus et mauris sodales aliquam a sagittis nunc. Mauris condimentum sed quam eu placerat. Suspendisse fringilla purus dictum diam luctus, quis viverra augue elementum. Phasellus tempus metus eu diam posuere cursus. Vivamus metus diam, consectetur sit amet ultricies eget, ultricies in quam. Nullam rutrum, nunc nec tincidunt eleifend, velit dui maximus enim, tempor tempus orci massa non leo. Donec quis est nec risus pretium auctor a at augue. Morbi eget hendrerit nisi, sit amet pulvinar nibh.
+        
+        
+        Duis laoreet pharetra sagittis. Aenean in commodo libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum rhoncus massa eu leo iaculis, quis feugiat enim interdum. In congue libero ut condimentum mattis. Cras ullamcorper eget eros ut dapibus. Vestibulum viverra dolor sapien, id rhoncus elit tincidunt eget. Sed maximus at tellus quis gravida. Etiam venenatis vehicula ligula in rhoncus. Mauris congue leo lectus, id pulvinar quam condimentum quis. Sed enim tortor, cursus id metus et, lobortis feugiat quam. Sed eget erat orci. Duis sed vehicula ex. Nam sit amet odio ac velit mattis viverra.
+        
+        
+        Donec lobortis commodo ipsum ut malesuada. Aenean a fermentum enim, at mattis nibh. Fusce nec nibh eu orci porta iaculis. Ut sollicitudin vel lectus eu blandit. Phasellus tempus lorem a turpis varius molestie. Pellentesque nec purus venenatis nisl mattis sollicitudin eget quis ante. Curabitur cursus erat quis lacus consectetur commodo. Nulla accumsan porttitor interdum. Morbi vehicula pulvinar mi. Nullam et porttitor augue. Duis sed eros et nibh pellentesque aliquam ac eget turpis. Nulla ac ligula eu libero euismod consequat quis eget lectus. Ut dignissim nisi et fringilla fringilla. In hendrerit odio ut metus laoreet placerat. Aliquam efficitur felis in tellus malesuada, a laoreet libero rutrum. Phasellus at nunc lobortis, porttitor est laoreet, egestas mi.
+        
+        
+        Praesent imperdiet posuere aliquam. Nunc sodales et velit nec venenatis. Donec nibh nisi, sodales eget imperdiet sed, scelerisque ac lorem. Etiam quis accumsan nunc. Praesent nec finibus urna. Sed euismod sem aliquam tempus feugiat. Nunc ullamcorper sed elit at tristique. Proin feugiat venenatis rutrum. Suspendisse potenti. Etiam non consectetur libero, ut sollicitudin nibh. Nam eu tortor ac dolor scelerisque tincidunt. Maecenas dapibus orci nec ante pharetra, accumsan lobortis eros accumsan.
+        
+        
+        In sodales libero non eros tristique semper. Suspendisse fermentum, nisl tristique venenatis mattis, neque tellus tempor purus, sit amet imperdiet leo turpis at urna. Nullam et facilisis ligula. Sed pharetra imperdiet elit euismod interdum. Aliquam tempus, sem eu condimentum maximus, ipsum metus mattis est, euismod placerat velit orci consequat justo. Phasellus finibus, magna et consectetur hendrerit, tortor leo pretium risus, eget euismod lectus eros in lorem. Praesent leo lacus, finibus et ante sit amet, pulvinar varius risus. Morbi lobortis diam vulputate egestas imperdiet. Donec at est neque. Sed a eleifend mi, vitae sollicitudin dolor. Cras ac hendrerit tellus. Nulla sagittis mauris id sem sodales volutpat. Proin efficitur dolor lacus, vitae imperdiet massa maximus ac. Phasellus dignissim risus eu dui mattis varius.
         </p>
-
-    </div>
-    <div class="navBar">
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="TestSearchBar.html">Search</a></li>
-            
-        </ul>
-
-    </div>
-
+        
+        
+        </div>
+        
 </body>
 
 </html>

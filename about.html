@@ -3,10 +3,11 @@
 
 <head>
     <title>The To Be Read List</title>
+    <link rel="icon" href="NoBackgroundLogoTBRList.png" type="image/icon type">
     <style>
         body {
             background-color: #ECDFD1;
-            font-family:monospace;
+            font-family: monospace;
         }
 
         h1 {
@@ -25,7 +26,7 @@
             float: left;
         }
 
-        .navBar li a {
+        .active {
             display: block;
             color: #E0AB80;
             text-align: center;
@@ -37,17 +38,42 @@
             background-color: #AE8165;
         }
 
-        .theTeam {
+        .newReleases {
             border: 1px solid black;
             margin: 1rem;
             padding: 2rem 2rem;
             text-align: center;
         }
 
+        .articles {
+            display: inline-block;
+            padding: 1rem 1rem;
+            vertical-align: middle;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .logo {
+            display: block;
+            color: #E0AB80;
+            text-align: center;
+            text-decoration: none;
+        }
+
         .profilePics {
             display: inline-block;
             padding: 1rem 1rem;
             vertical-align: middle;
+        }
+
+        .theTeam {
+            border: 1px solid black;
+            margin: 1rem;
+            padding: 2rem 2rem;
+            text-align: center;
         }
     </style>
 </head>
@@ -56,75 +82,74 @@
 
     <div class="navBar">
         <ul>
+            <li><a href="/bookBlog" class="logo"><img src="NoBackgroundLogoTBRList.png" width="40"></a></li>
             <li><a class="active" href="/bookBlog">Home</a></li>
-            <li><a href="bookstomovies.html">Books To Movies</a></li>
-            <li><a href="newreleases.html">New Releases</a></li>
-            <li><a href="fantasy.html">Fantasy</a></li>
-            <li><a href="dystopianscifi.html">Dystopian/Sci-Fi</a></li>
-            <li><a href="romance.html">Romance</a></li>
-            <li><a href="booklists.html">Book Lists</a></li>
-            <li><a href="weeklystaffpicks.html">Weekly Staff Picks</a></li>
-            <li><a href="seasonalfavorites.html">Seasonal Favorites</a></li>
-
+            <li><a class="active" href="bookstomovies.html">Books To Movies</a></li>
+            <li><a class="active" href="newreleases.html">New Releases</a></li>
+            <li><a class="active" href="fantasy.html">Fantasy</a></li>
+            <li><a class="active" href="dystopianscifi.html">Dystopian/Sci-Fi</a></li>
+            <li><a class="active" href="romance.html">Romance</a></li>
+            <li><a class="active" href="booklists.html">Book Lists</a></li>
+            <li><a class="active" href="weeklystaffpicks.html">Weekly Staff Picks</a></li>
+            <li><a class="active" href="seasonalfavorites.html">Seasonal Favorites</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="TestSearchBar.html" class="logo"><img src="searchlogo.png" width="40"></a></li>
         </ul>
 
     </div>
-
-
     <div class="theTeam">
         <h1>
             The Team
         </h1>
-        <p>
+        <h3>
             Hi! We're a group of teenagers spread across Washington State, we write articles and reviews about books.
-        </p>
+        </h3>
         <div class="profilePics">
             <p>
-                Isabella (Bella) <br>Founder, Writer, Editor in Chief, Freelance
+                Bella <br>
+                Founder, Writer, Editor in Chief,<br>
+                Freelance
             </p>
             <img src="BellaProfilePic.jpeg.png" width="200" height="200">
         </div>
         <div class="profilePics">
             <p>
-                Calista <br> Writer, Freelance
+                Calista <br>
+                Writer, Freelance
             </p>
             <img src="CalistaProfilePic.jpeg.png" width="200" height="200">
         </div>
         <div class="profilePics">
             <p>
-                Gwendolyn (Gwen) <br> Writer, Books to Movies
+                Gwen <br>
+                Writer, Books to Movies
             </p>
             <img src="GwenProfilePic.jpeg.png" width="200" height="200">
         </div>
         <br>
         <div class="profilePics">
             <p>
-                Lillian (Lillie) <br> Writer, Freelance
+                Lillie <br>
+                Writer, Freelance
             </p>
             <img src="LillieProfilePic.jpeg.png" width="200" height="200">
         </div>
         <div class="profilePics">
             <p>
-                Matilda (Matty) <br> Writer, Co-editor, Fantasy
+                Matty <br>
+                Writer, Co-editor, Fantasy
             </p>
             <img src="MattyProfilePic.jpeg.png" width="200" height="200">
         </div>
         <div class="profilePics">
             <p>
-                Addison (Addie) <br> Writer, Romance
+                Addie <br>
+                Writer, Romance
             </p>
             <img src="AddieProfilePic.jpeg.png" width="200" height="200">
         </div>
     </div>
 
-    <div class="navBar">
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="TestSearchBar.html">Search</a></li>
-            
-        </ul>
-
-    </div>
 
 </body>
 
