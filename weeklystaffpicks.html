@@ -3,10 +3,11 @@
 
 <head>
     <title>The To Be Read List</title>
+    <link rel="icon" href="NoBackgroundLogoTBRList.png" type="image/icon type">
     <style>
         body {
             background-color: #ECDFD1;
-            font-family:monospace;
+            font-family: monospace;
         }
 
         h1 {
@@ -25,7 +26,7 @@
             float: left;
         }
 
-        .navBar li a {
+        .active {
             display: block;
             color: #E0AB80;
             text-align: center;
@@ -37,17 +38,42 @@
             background-color: #AE8165;
         }
 
-        .theTeam {
+        .newReleases {
             border: 1px solid black;
             margin: 1rem;
             padding: 2rem 2rem;
             text-align: center;
         }
 
+        .articles {
+            display: inline-block;
+            padding: 1rem 1rem;
+            vertical-align: middle;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .logo {
+            display: block;
+            color: #E0AB80;
+            text-align: center;
+            text-decoration: none;
+        }
+
         .profilePics {
             display: inline-block;
             padding: 1rem 1rem;
             vertical-align: middle;
+        }
+
+        .theTeam {
+            border: 1px solid black;
+            margin: 1rem;
+            padding: 2rem 2rem;
+            text-align: center;
         }
     </style>
 </head>
@@ -56,24 +82,28 @@
 
     <div class="navBar">
         <ul>
+            <li><a href="/bookBlog" class="logo"><img src="NoBackgroundLogoTBRList.png" width="40"></a></li>
             <li><a class="active" href="/bookBlog">Home</a></li>
-            <li><a href="bookstomovies.html">Books To Movies</a></li>
-            <li><a href="newreleases.html">New Releases</a></li>
-            <li><a href="fantasy.html">Fantasy</a></li>
-            <li><a href="dystopianscifi.html">Dystopian/Sci-Fi</a></li>
-            <li><a href="romance.html">Romance</a></li>
-            <li><a href="booklists.html">Book Lists</a></li>
-            <li><a href="weeklystaffpicks.html">Weekly Staff Picks</a></li>
-            <li><a href="seasonalfavorites.html">Seasonal Favorites</a></li>
+            <li><a class="active" href="bookstomovies.html">Books To Movies</a></li>
+            <li><a class="active" href="newreleases.html">New Releases</a></li>
+            <li><a class="active" href="fantasy.html">Fantasy</a></li>
+            <li><a class="active" href="dystopianscifi.html">Dystopian/Sci-Fi</a></li>
+            <li><a class="active" href="romance.html">Romance</a></li>
+            <li><a class="active" href="booklists.html">Book Lists</a></li>
+            <li><a class="active" href="weeklystaffpicks.html">Weekly Staff Picks</a></li>
+            <li><a class="active" href="seasonalfavorites.html">Seasonal Favorites</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="TestSearchBar.html" class="logo"><img src="searchlogo.png" width="40"></a></li>
         </ul>
 
     </div>
-
-
     <div class="theTeam">
         <h1>
             Weekly Staff Picks
         </h1>
+        <h2>
+            (The book titles link to goodreads)
+        </h2>
         <div class="profilePics">
             <p>
                 Bella - <a href="https://www.goodreads.com/">Weekly Pick</a>
@@ -101,7 +131,9 @@
         </div>
         <div class="profilePics">
             <p>
-                Matty - <a href="https://www.goodreads.com/book/show/36381037-cinder?ac=1&from_search=true&qid=9NTCh2g3Xb&rank=1">The Lunar Chronicles Series</a>
+                Matty - <a
+                    href="https://www.goodreads.com/book/show/36381037-cinder?ac=1&from_search=true&qid=9NTCh2g3Xb&rank=1">The
+                    Lunar Chronicles Series</a>
             </p>
             <img src="MattyProfilePic.jpeg.png" width="200" height="200">
         </div>
@@ -111,15 +143,6 @@
             </p>
             <img src="AddieProfilePic.jpeg.png" width="200" height="200">
         </div>
-    </div>
-
-    <div class="navBar">
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="TestSearchBar.html">Search</a></li>
-            
-        </ul>
-
     </div>
 
 </body>
