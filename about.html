@@ -1,148 +1,74 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <title>The To Be Read List</title>
+    <title>
+        The To Be Read List
+    </title>
     <link rel="icon" href="NoBackgroundLogoTBRList.png" type="image/icon type">
-    <style>
-        body {
-            
-            font-family: monospace;
-        }
-
-        h1 {
-            font-size: 50px;
-        }
-
-        .navBar ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            
-        }
-
-        .navBar li {
-            float: left;
-        }
-
-        .active {
-            display: block;
-    
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        .navBar li a:hover {
-            color: grey;
-        }
-
-        .newReleases {
-            margin: 1rem;
-            padding: 2rem 2rem;
-            text-align: center;
-        }
-
-        .articles {
-            display: inline-block;
-            padding: 1rem 1rem;
-            vertical-align: middle;
-        }
-
-        a {
-            color: black;
-            text-decoration: none;
-        }
-
-        .logo {
-            display: block;
-    
-            text-align: center;
-            text-decoration: none;
-        }
-
-        .profilePics {
-            display: inline-block;
-            padding: 1rem 1rem;
-            vertical-align: middle;
-        }
-
-        .theTeam {
-           
-            margin: 1rem;
-            padding: 2rem 2rem;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <div class="navBar">
         <ul>
-            <li><a href="/bookBlog" class="logo"><img src="NoBackgroundLogoTBRList.png" width="40"></a></li>
-            <li><a class="active" href="/bookBlog">Home</a></li>
-            <li><a class="active" href="bookstomovies.html">Books To Movies</a></li>
-            <li><a class="active" href="newreleases.html">New Releases</a></li>
+            <li><a href="indexnew.html" class="logo"><img src="NoBackgroundLogoTBRList.png" width="40"></a></li>
+            <li><a class="active" href="indexnew.html">Home</a></li>
+            <li><a class="active" href="booksToMovies.html">Books To Movies</a></li>
+            <li><a class="active" href="newReleases.html">New Releases</a></li>
             <li><a class="active" href="fantasy.html">Fantasy</a></li>
-            <li><a class="active" href="dystopianscifi.html">Dystopian/Sci-Fi</a></li>
+            <li><a class="active" href="dystopianSciFi.html">Dystopian/Sci-Fi</a></li>
             <li><a class="active" href="romance.html">Romance</a></li>
-            <li><a class="active" href="booklists.html">Book Lists</a></li>
-            <li><a class="active" href="weeklystaffpicks.html">Weekly Staff Picks</a></li>
-            <li><a class="active" href="seasonalfavorites.html">Seasonal Favorites</a></li>
+            <li><a class="active" href="bookLists.html">Book Lists</a></li>
+            <li><a class="active" href="weeklyStaffPicks.html">Weekly Staff Picks</a></li>
+            <li><a class="active" href="seasonalFavorites.html">Seasonal Favorites</a></li>
             <li><a class="active" href="about.html">About</a></li>
-            <li><a href="TestSearchBar.html" class="logo"><img src="searchlogo.png" width="40"></a></li>
         </ul>
-
     </div>
-    <div class="theTeam">
+    <div class="newReleases">
         <h1>
-            The Team
+            About
         </h1>
-        <h3>
-            Hi! We're a group of teenagers spread across Washington State, we write articles and reviews about books.
-        </h3>
-        <div class="profilePics">
-            <p>
-                Bella <br>
-                Founder, Writer, Editor in Chief,<br>
-                Freelance
-            </p>
-            <img src="BellaProfilePic.jpeg.png" width="200" height="200">
+        <div>
+            <div class="articles">
+                <p>Hi! We're a bunch of high schoolers spread across WA State. We write articles and reviews about
+                    books!</p>
+                <div class=individual>
+                    <h2>
+                        Name
+                        <br>Job
+                    </h2>
+                    <img src="null" alt="PFP" width="200" height="200">
+                </div>
+                <div class=individual>
+                    <h2>
+                        Name
+                        <br>Job
+                    </h2>
+                    <img src="null" alt="PFP" width="200" height="200">
+                </div>
+                <div class=individual>
+                    <h2>
+                        Name
+                        <br>Job
+                    </h2>
+                    <img src="null" alt="PFP" width="200" height="200">
+                </div>
+                <div class=individual>
+                    <h2>
+                        Name
+                        <br>Job
+                    </h2>
+                    <img src="null" alt="PFP" width="200" height="200">
+                </div>
+                <div class=individual>
+                    <h2>
+                        Name
+                        <br>Job
+                    </h2>
+                    <img src="null" alt="PFP" width="200" height="200">
+                </div>
+            </div>
         </div>
-        <div class="profilePics">
-            <p>
-                Calista <br>
-                Writer, Freelance
-            </p>
-            <img src="CalistaProfilePic.jpeg.png" width="200" height="200">
-        </div>
-        <div class="profilePics">
-            <p>
-                Gwen <br>
-                Writer, Books to Movies
-            </p>
-            <img src="GwenProfilePic.jpeg.png" width="200" height="200">
-        </div>
-
-        <div class="profilePics">
-            <p>
-                Matty <br>
-                Writer, Co-editor, Fantasy
-            </p>
-            <img src="MattyProfilePic.jpeg.png" width="200" height="200">
-        </div>
-        <div class="profilePics">
-            <p>
-                Leigh <br>
-                Writer, Freelance
-            </p>
-            <img src="leighprofilepic.jpeg.png" width="200" height="200">
-        </div>
-    </div>
-
-
 </body>
 
 </html>

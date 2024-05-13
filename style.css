@@ -1,0 +1,60 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(244, 228, 201);
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(49, 30, 15);
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(49, 30, 15);
+}
+
+p {
+    text-align: center;
+    color: rgb(49, 30, 15);
+}
+
+.navBar ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navBar li {
+    float: left;
+    background-color: rbg(209, 174, 141);
+}
+
+.active {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a {
+    color: rgb(49, 30, 15);
+    text-decoration: none;
+}
+
+.navBar li a:hover {
+    color: rgb(209, 174, 141);
+}
+
+.individual {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
+.articles {
+
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
