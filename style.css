@@ -27,7 +27,6 @@ p {
 
 .navBar li {
     float: left;
-    background-color: rbg(209, 174, 141);
 }
 
 .active {

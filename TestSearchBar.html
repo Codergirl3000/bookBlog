@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The To Be Read List</title>
+    <link rel="icon" href="NoBackgroundLogoTBRList.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navBar">
+        <ul>
+            <li><a href="/bookBlog" class="logo"><img src="NoBackgroundLogoTBRList.png" width="40"></a></li>
+            <li><a class="active" href="indexnew.html">Home</a></li>
+            <li><a class="active" href="bookstomovies.html">Books To Movies</a></li>
+            <li><a class="active" href="newreleases.html">New Releases</a></li>
+            <li><a class="active" href="fantasy.html">Fantasy</a></li>
+            <li><a class="active" href="dystopianscifi.html">Dystopian/Sci-Fi</a></li>
+            <li><a class="active" href="romance.html">Romance</a></li>
+            <li><a class="active" href="booklists.html">Book Lists</a></li>
+            <li><a class="active" href="weeklystaffpicks.html">Weekly Staff Picks</a></li>
+            <li><a class="active" href="seasonalfavorites.html">Seasonal Favorites</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="TestSearchBar.html" class="logo"><img src="searchlogo.png" width="40"></a></li>
+        </ul>
+
+    </div>
+<br>
+    <!-- input tag -->
+    <input id="searchbar" onkeyup="search_article()" type="text" name="search" placeholder="Search articles...">
+
+
+    <!-- ordered list -->
+    <ul id='list' class="articleLinks">
+        <li class="articles"><a href="mrlemoncelloslibrary.html">Books to Movies - Escape From Mr. Lemoncello's Library</a></li>
+        <li class="articles"><a href="dystopianlistbooklist.html">Book Lists - Dystopian Books To Read This Summer</a></li>
+        <li class="articles"><a href="americanpanda.html">Romance - American Panda</a></li>
+        <li class="articles"><a href="peculiarchildrenbookstomovies.html">Books to Movies - Miss Peregrine's Home For Peculiar Children</a></li>
+        <li class="articles"><a href="squirenewreleases.html">New Releases - Squire</a></li>
+        <li class="articles"><a href="harrypotter1bookstomovies.html">Books to Movies - Harry Potter</a></li>
+    </ul>
+
+
+
+
+    <!-- linking javascript -->
+    <script>
+
+
+        // JavaScript code
+        function search_article() {
+            let input = document.getElementById('searchbar').value
+            input = input.toLowerCase();
+            let x = document.getElementsByClassName('articles');
+
+
+            for (i = 0; i < x.length; i++) {
+                if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display = "none";
+                }
+                else {
+                    x[i].style.display = "list-item";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
