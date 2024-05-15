@@ -57,6 +57,12 @@ a {
     padding: 2rem 2rem;
     text-align: center;
 }
-.logo:active{
-    
+
+.logo {
+    float: center;
+    padding: 14px 16px;
+}
+
+.logo:active {
+    padding: 14px 100px;
 }
