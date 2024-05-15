@@ -58,11 +58,14 @@ a {
     text-align: center;
 }
 
-.logo {
+#logo {
     float: center;
     padding: 14px 16px;
 }
 
-.logo:active {
+#logo:active {
     padding: 14px 100px;
+}
+#list{
+    list-style-type: none;
 }
