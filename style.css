@@ -63,9 +63,6 @@ a {
     padding: 14px 16px;
 }
 
-#logo:active {
-    padding: 14px 100px;
-}
 #list{
     list-style-type: none;
 }
