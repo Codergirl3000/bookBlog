@@ -13,7 +13,7 @@
         <ul>
             <li><a href="indexnew.html" class="logo"><img src="NoBackgroundLogoTBRList.png" width="40"></a></li>
             <li><a href="testsearchbar.html" class="logo"><img src="searchlogo.png" width="40"></a></li>
-            <input id="logo" onkeyup="search_article()" onclick="large_textbox()" type="text" name="search"
+            <input id="logo" onkeyup="search_article()" type="text" name="search"
                 placeholder="Search articles...">
         </ul>
         <!-- test -->
@@ -35,17 +35,6 @@
 
 
         // JavaScript code
-            // button.onclick = function large_textbox() {
-            //     if (content.className == "open") {
-            //         //shrink the box
-            //         content.className = "";
-            //         button.innerHTML = "Show More";
-            //     } else {
-            //         //expand the box
-            //         content.className = "open";
-            //         button.innerHTML = "Show Less";
-            //     }
-            // };
         function search_article() {
             let input = document.getElementById('searchbar').value
             input = input.toLowerCase();
