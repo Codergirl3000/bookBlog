@@ -1,45 +1,101 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <title>The To Be Read List</title>
+    <title>
+        The To Be Read List
+    </title>
     <link rel="icon" href="NoBackgroundLogoTBRList.png" type="image/icon type">
     <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        #searchbar {
+            margin: 20px;
+            padding: 10px;
+            border-radius: 20px;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        #list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .articles {
+            font-size: 1.2em;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .articles:last-child {
+            border-bottom: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 
 <body>
-
     <div class="navBar">
         <ul>
-            <li><a href="indexnew.html" class="logo"><img src="NoBackgroundLogoTBRList.png" width="40"></a></li>
-            <li><a href="testsearchbar.html" class="logo"><img src="searchlogo.png" width="40"></a></li>
-            <input id="logo" onkeyup="search_article()" type="text" name="search"
-                placeholder="Search articles...">
+            <li><br><a href="testsearchbar.html" id="logo"><img src="searchlogo.png" width="40"></a></li>
+            <input id="searchbar" onkeyup="search_animal()" type="text" name="search" placeholder="Search articles..">
         </ul>
-        <!-- test -->
     </div>
     <br>
-    <!-- input tag -->
-
 
     <!-- ordered list -->
-    <ul id='list' class="articleLinks">
-        <li class="articles"><a href="example.html">Example Article</a></li>
-    </ul>
+    <div class="container">
 
 
-
-
+        <ul id='list'>
+            <li class="articles"><a href="example.html">Example</a></li>
+            <li class="articles">Elephant</li>
+            <li class="articles">Fish</li>
+            <li class="articles">Gorilla</li>
+            <li class="articles">Monkey</li>
+            <li class="articles">Turtle</li>
+            <li class="articles">Whale</li>
+            <li class="articles">Alligator</li>
+            <li class="articles">Donkey</li>
+            <li class="articles">Horse</li>
+        </ul>
+    </div>
     <!-- linking javascript -->
     <script>
-
-
         // JavaScript code
-        function search_article() {
+
+        function search_animal() {
             let input = document.getElementById('searchbar').value
             input = input.toLowerCase();
             let x = document.getElementsByClassName('articles');
-
 
             for (i = 0; i < x.length; i++) {
                 if (!x[i].innerHTML.toLowerCase().includes(input)) {
