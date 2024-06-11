@@ -13,11 +13,20 @@ h2 {
     font-size: 20px;
     text-align: center;
     color: black;
+    padding-bottom: 20px;
+}
+h4 {
+    color: black;
+    font-size:small;
+    padding-left: 29%;
 }
 
 p {
-    text-align: center;
     color: black;
+    font-size:larger;
+    padding-top: 40px;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .navBar ul {
@@ -60,7 +69,7 @@ a {
 
 #logo {
     float: center;
-    padding: 14px 16px;
+    padding: 14px 200px;
 }
 
 #list{
