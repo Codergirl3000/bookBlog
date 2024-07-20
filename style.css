@@ -1,18 +1,18 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color:  black;
 }
 
 h1 {
     font-size: 40px;
     text-align: center;
-    color: black;
+    color: rgb(236,219,186);
 }
 
 h2 {
     font-size: 20px;
     text-align: center;
-    color: black;
+    color: rgb(236,219,186);
     padding-bottom: 20px;
 }
 h4{
@@ -21,7 +21,7 @@ h4{
     padding-right: 50%;
 }
 p {
-    color: black;
+    color: rgb(236,219,186);
     font-size:larger;
     padding-top: 40px;
     padding-left: 20%;
@@ -42,10 +42,11 @@ p {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color: rgb(236,219,186);
 }
 
 a {
-    color: black;
+    color: rgb(236,219,186);
     text-decoration: none;
 }
 
